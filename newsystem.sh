@@ -41,6 +41,7 @@ sh /opt/pycharm-2017.3.4/bin/pycharm.sh
 sudo pip install matplotlib
 sudo pip install bs4
 sudo pip install virtualenv
+sudo pip install biopython
 
 # make dir for git
 mkdir ~/git
