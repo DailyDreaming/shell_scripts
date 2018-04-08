@@ -5,6 +5,8 @@ sudo apt -y dist-upgrade
 sudo apt install -y curl
 sudo apt install -y libssl-dev libffi-dev
 sudo apt install -y jq
+sudo apt install -y python-pip
+
 
 # install docker
 # https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-16-04
