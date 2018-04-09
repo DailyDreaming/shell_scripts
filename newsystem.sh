@@ -11,6 +11,7 @@ sudo apt install -y r-base-core
 sudo apt install -y cryptsetup
 sudo apt install -y compizconfig-settings-manager
 sudo apt install -y gconf-editor
+sudo apt install -y default-jdk
 
 # install docker
 # https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-16-04
