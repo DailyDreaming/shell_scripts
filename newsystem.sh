@@ -62,6 +62,9 @@ sudo apt-get install ubuntu-restricted-extras
 git config --global user.email "you@example.com"
 git config --global user.name "Your Name"
 
+# gnome settings (always show the path)
+gsettings set org.gnome.nautilus.preferences always-use-location-entry true
+
 # edit these
 ## /etc/apt/sources.list
 ## ~/.bashrc
