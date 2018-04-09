@@ -6,7 +6,7 @@ sudo apt install -y curl
 sudo apt install -y libssl-dev libffi-dev
 sudo apt install -y jq
 sudo apt install -y python-pip
-
+sudo apt install r-base-core
 
 # install docker
 # https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-16-04
@@ -24,6 +24,7 @@ wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add
 echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
 sudo apt update
 sudo apt install sublime-text
+
 
 # install pycharm
 # https://www.jetbrains.com/pycharm/download/download-thanks.html?platform=linux
