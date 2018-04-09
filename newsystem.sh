@@ -6,6 +6,7 @@ sudo apt install -y curl
 sudo apt install -y libssl-dev libffi-dev
 sudo apt install -y jq
 sudo apt install -y python-pip
+sudo apt install -y python3-pip
 sudo apt install -y r-base-core
 sudo apt install -y cryptsetup
 sudo apt install -y compizconfig-settings-manager
