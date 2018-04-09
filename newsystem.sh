@@ -55,6 +55,10 @@ sudo apt-get purge avahi-daemon
 # install video player codecs
 sudo apt-get install ubuntu-restricted-extras
 
+# git
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+
 # edit these
 ## /etc/apt/sources.list
 ## ~/.bashrc
