@@ -74,6 +74,9 @@ ls /usr/share/applications/sublime_text.desktop # make sure this exists
 ls /usr/share/applications/sublime-text.desktop # might be this instead on some systems
 sudo nano /usr/share/applications/defaults.list # find/replace 'gedit' with 'sublime_text' or 'sublime-text'
 
-# edit these
 ## /etc/apt/sources.list
+
 ## ~/.bashrc
+alias sudo='sudo '
+alias gittoil='git clone https://github.com/BD2KGenomics/toil.git'
+alias mktoil='git clone https://github.com/BD2KGenomics/toil.git && cd toil && virtualenv venv && . venv/bin/activate && make prepare && make develop extras=[all]'
