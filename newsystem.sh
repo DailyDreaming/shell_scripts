@@ -66,6 +66,9 @@ git config --global user.name "Your Name"
 # gnome settings (always show the path)
 gsettings set org.gnome.nautilus.preferences always-use-location-entry true
 
+# mod pip to allow installing without sudo
+sudo -H chmod 777 -R /home/{user}/.cache/pip
+
 # set sublime text as the default editor
 ls /usr/share/applications/sublime_text.desktop # make sure this exists
 ls /usr/share/applications/sublime-text.desktop # might be this instead on some systems
