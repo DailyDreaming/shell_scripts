@@ -79,4 +79,6 @@ sudo nano /usr/share/applications/defaults.list # find/replace 'gedit' with 'sub
 ## ~/.bashrc
 alias sudo='sudo '
 alias gittoil='git clone https://github.com/BD2KGenomics/toil.git'
-alias mktoil='git clone https://github.com/BD2KGenomics/toil.git && cd toil && virtualenv venv && . venv/bin/activate && make prepare && make develop extras=[all]'
+alias mktoil='git clone https://github.com/BD2KGenomics/toil.git && cd toil && virtualenv venv && . venv/bin/activate && make prepare && mak$
+mktoilb() { git clone https://github.com/BD2KGenomics/toil.git && cd toil && git checkout "$1" && virtualenv venv && . venv/bin/activate && $
+gittoilb() { git clone https://github.com/BD2KGenomics/toil.git && cd toil && git checkout "$1"; }
