@@ -13,6 +13,7 @@ sudo apt install -y cryptsetup
 sudo apt install -y compizconfig-settings-manager
 sudo apt install -y gconf-editor
 sudo apt install -y default-jdk
+sudo apt install -y mysql-server libmysqlclient-dev
 
 # install docker
 # https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-16-04
@@ -49,6 +50,7 @@ sudo pip install matplotlib
 sudo pip install bs4
 sudo pip install virtualenv
 sudo pip install biopython
+sudo pip install flask
 
 # make dir for git
 mkdir ~/git
