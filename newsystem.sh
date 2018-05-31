@@ -62,6 +62,8 @@ sudo apt-get purge avahi-daemon
 
 # install video player codecs
 sudo apt-get install ubuntu-restricted-extras
+sudo apt install libdvdnav4 libdvdread4 gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly libdvd-pkg
+sudo dpkg-reconfigure libdvd-pkg # necessary to install libdvdcss2
 
 ## https://cloud.google.com/sdk/docs/quickstart-debian-ubuntu
 # Create environment variable for correct distribution
@@ -93,6 +95,6 @@ sudo nano /usr/share/applications/defaults.list # find/replace 'gedit' with 'sub
 ## ~/.bashrc
 alias sudo='sudo '
 alias gittoil='git clone https://github.com/BD2KGenomics/toil.git'
-alias mktoil='git clone https://github.com/BD2KGenomics/toil.git && cd toil && virtualenv venv && . venv/bin/activate && make prepare && mak$
-mktoilb() { git clone https://github.com/BD2KGenomics/toil.git && cd toil && git checkout "$1" && virtualenv venv && . venv/bin/activate && $
+alias mktoil='git clone https://github.com/BD2KGenomics/toil.git && cd toil && virtualenv venv && . venv/bin/activate && make prepare && make develop extras=[all]'
+mktoilb() { git clone https://github.com/BD2KGenomics/toil.git && cd toil && git checkout "$1" && virtualenv venv && . venv/bin/activate && make prepare && make develop extras=[all]; }
 gittoilb() { git clone https://github.com/BD2KGenomics/toil.git && cd toil && git checkout "$1"; }
