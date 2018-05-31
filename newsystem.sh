@@ -98,3 +98,4 @@ alias gittoil='git clone https://github.com/BD2KGenomics/toil.git'
 alias mktoil='git clone https://github.com/BD2KGenomics/toil.git && cd toil && virtualenv venv && . venv/bin/activate && make prepare && make develop extras=[all]'
 mktoilb() { git clone https://github.com/BD2KGenomics/toil.git && cd toil && git checkout "$1" && virtualenv venv && . venv/bin/activate && make prepare && make develop extras=[all]; }
 gittoilb() { git clone https://github.com/BD2KGenomics/toil.git && cd toil && git checkout "$1"; }
+ppjson() { cat "$1" | jq ''; }
