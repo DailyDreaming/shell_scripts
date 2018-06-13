@@ -15,6 +15,7 @@ sudo apt install -y gconf-editor
 sudo apt install -y default-jdk
 sudo apt install -y mysql-server libmysqlclient-dev
 sudo apt install -y ncbi-blast+
+sudo apt install -y p7zip-full
 
 # install docker
 # https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-16-04
