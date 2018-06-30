@@ -35,7 +35,6 @@ echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sou
 sudo apt update
 sudo apt install -y sublime-text
 
-
 # install pycharm
 # https://www.jetbrains.com/pycharm/download/download-thanks.html?platform=linux
 sudo tar xf pycharm-professional-2017.3.4.tar.gz -C /opt/
