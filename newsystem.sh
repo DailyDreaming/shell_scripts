@@ -17,6 +17,8 @@ sudo apt install -y mysql-server libmysqlclient-dev
 sudo apt install -y ncbi-blast+
 sudo apt install -y p7zip-full
 sudo apt install -y zip unzip
+# requires an updated sources.list
+sudo apt install -y libssl1.1
 
 # install docker
 # https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-16-04
@@ -53,6 +55,9 @@ sudo pip install bs4
 sudo pip install virtualenv
 sudo pip install biopython
 sudo pip install flask
+# project specific
+sudo pip install hca
+sudo pip install wes-service
 
 # make dir for git
 mkdir ~/git
@@ -94,6 +99,7 @@ ls /usr/share/applications/sublime-text.desktop # might be this instead on some 
 sudo nano /usr/share/applications/defaults.list # find/replace 'gedit' with 'sublime_text' or 'sublime-text'
 
 ## /etc/apt/sources.list
+deb http://security.ubuntu.com/ubuntu bionic-security main
 
 ## ~/.bashrc
 alias sudo='sudo '
