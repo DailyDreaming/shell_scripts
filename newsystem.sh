@@ -108,3 +108,4 @@ alias mktoil='git clone https://github.com/BD2KGenomics/toil.git && cd toil && v
 mktoilb() { git clone https://github.com/BD2KGenomics/toil.git && cd toil && git checkout "$1" && virtualenv venv && . venv/bin/activate && make prepare && make develop extras=[all]; }
 gittoilb() { git clone https://github.com/BD2KGenomics/toil.git && cd toil && git checkout "$1"; }
 ppjson() { cat "$1" | jq ''; }
+gs_json() { python /usr/local/bin/dl_gsfiles_frm_json.py "$1"; }
