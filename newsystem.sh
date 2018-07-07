@@ -50,11 +50,16 @@ sh /opt/pycharm-2017.3.4/bin/pycharm.sh
 # install keras
 
 # python
-sudo pip install matplotlib
-sudo pip install bs4
-sudo pip install virtualenv
-sudo pip install biopython
-sudo pip install flask
+sudo pip install -U matplotlib
+sudo pip install -U bs4
+sudo pip install -U virtualenv
+sudo pip install -U biopython
+sudo pip install -U flask
+sudo pip install -U jupyter jupyter_client ipython 
+sudo pip install -U pandas 
+sudo pip install -U scipy 
+sudo pip install -U scikit-learn 
+sudo pip install -U khmer
 # project specific
 sudo pip install hca
 sudo pip install wes-service
