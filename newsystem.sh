@@ -17,6 +17,7 @@ sudo apt install -y mysql-server libmysqlclient-dev
 sudo apt install -y ncbi-blast+
 sudo apt install -y p7zip-full
 sudo apt install -y zip unzip
+sudo apt install -y flake8
 # requires an updated sources.list
 sudo apt install -y libssl1.1
 
