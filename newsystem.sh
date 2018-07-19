@@ -90,6 +90,8 @@ sudo apt-get update && sudo apt-get install google-cloud-sdk
 # git
 git config --global user.email "you@example.com"
 git config --global user.name "Your Name"
+# https://git-scm.com/book/en/v2/Git-Tools-Credential-Storage#_credential_caching
+git config --global credential.helper cache
 
 # gnome settings (always show the path)
 gsettings set org.gnome.nautilus.preferences always-use-location-entry true
