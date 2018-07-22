@@ -112,10 +112,10 @@ deb http://security.ubuntu.com/ubuntu bionic-security main
 
 ## ~/.bashrc
 alias sudo='sudo '
-alias gittoil='git clone https://github.com/BD2KGenomics/toil.git'
-alias mktoil='git clone https://github.com/BD2KGenomics/toil.git && cd toil && virtualenv venv && . venv/bin/activate && make prepare && make develop extras=[all]'
-mktoilb() { git clone https://github.com/BD2KGenomics/toil.git && cd toil && git checkout "$1" && virtualenv venv && . venv/bin/activate && make prepare && make develop extras=[all]; }
-gittoilb() { git clone https://github.com/BD2KGenomics/toil.git && cd toil && git checkout "$1"; }
+alias gittoil='git clone https://github.com/DataBiosphere/toil.git'
+alias mktoil='git clone https://github.com/DataBiosphere/toil.git && cd toil && virtualenv venv && . venv/bin/activate && make prepare && make develop extras=[all]'
+mktoilb() { git clone https://github.com/DataBiosphere/toil.git && cd toil && git checkout "$1" && virtualenv venv && . venv/bin/activate && make prepare && make develop extras=[all]; }
+gittoilb() { git clone https://github.com/DataBiosphere/toil.git && cd toil && git checkout "$1"; }
 ppjson() { cat "$1" | jq ''; }
 # https://github.com/DailyDreaming/fetch_gs_frm_json/blob/master/dl_gsfiles_frm_json.py
 gs_json() { python /usr/local/bin/dl_gsfiles_frm_json.py "$1"; }
