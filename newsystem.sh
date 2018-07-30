@@ -114,6 +114,8 @@ deb http://security.ubuntu.com/ubuntu bionic-security main
 alias sudo='sudo '
 alias gittoil='git clone https://github.com/DataBiosphere/toil.git'
 alias mktoil='git clone https://github.com/DataBiosphere/toil.git && cd toil && virtualenv venv && . venv/bin/activate && make prepare && make develop extras=[all]'
+# https://wikileaks.org/ciav7p1/cms/page_1179773.html
+alias gitfix='git commit --amend -C HEAD'
 mktoilb() { git clone https://github.com/DataBiosphere/toil.git && cd toil && git checkout "$1" && virtualenv venv && . venv/bin/activate && make prepare && make develop extras=[all]; }
 gittoilb() { git clone https://github.com/DataBiosphere/toil.git && cd toil && git checkout "$1"; }
 ppjson() { cat "$1" | jq ''; }
