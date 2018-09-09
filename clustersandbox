@@ -1,0 +1,16 @@
+(venv) quokka@qcore:~/toil$ docker run --entrypoint=mesos-master --net=host -d --name=leader --volume=/home/jobStoreParentDir:/jobStoreParentDir quay.io/ucsc_cgl/toil:3.17.0 --registry=in_memory --ip=127.0.0.0 --port=8080 --allocation_interval=500ms
+
+(venv) quokka@qcore:~/toil$ docker run --entrypoint=mesos-slave --net=host -d --name=worker --volume=/home/jobStoreParentDir:/jobStoreParentDir quay.io/ucsc_cgl/toil:3.17.0 --work_dir=/var/lib/mesos --master=127.0.0.0:8080 --ip=127.0.0.0 —-attributes=preemptable:False --resources=cpus:2
+
+root@qcore:/# sudo apt update
+root@qcore:/# sudo apt install -y git nano
+root@qcore:/# sudo apt upgrade
+root@qcore:/# git clone https://github.com/DataBiosphere/toil.git && cd toil && virtualenv venv && . venv/bin/activate && make prepare && make develop extras=[all]
+(venv) root@qcore:/# deactivate
+root@qcore:/# pip install pytest
+
+pytest src/toil/test/batchSystems/batchSystemTest.py::MesosBatchSystemJobTest
+
+# if you need to kill the docker processes, for instance to use a different ip/port ->
+# restart by killing the process with "docker ps", "docker kill <ID>"," AND ALSO:
+docker ps --filter status=dead --filter status=exited -aq | xargs -r docker rm -v
