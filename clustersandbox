@@ -6,8 +6,7 @@ root@qcore:/# sudo apt update
 root@qcore:/# sudo apt install -y git nano
 root@qcore:/# sudo apt upgrade
 root@qcore:/# git clone https://github.com/DataBiosphere/toil.git && cd toil && virtualenv venv && . venv/bin/activate && make prepare && make develop extras=[all]
-(venv) root@qcore:/# deactivate
-root@qcore:/# pip install pytest
+(venv) root@qcore:/# pip install pytest
 
 pytest src/toil/test/batchSystems/batchSystemTest.py::MesosBatchSystemJobTest
 
