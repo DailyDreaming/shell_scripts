@@ -102,6 +102,9 @@ git config --global credential.helper store
 # gnome settings (always show the path)
 gsettings set org.gnome.nautilus.preferences always-use-location-entry true
 
+# cinnamon desktop
+sudo add-apt-repository ppa:lestcape/cinnamon
+
 # mod pip to allow installing without sudo
 sudo -H chmod 777 -R /home/{user}/.cache/pip
 
