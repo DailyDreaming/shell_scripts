@@ -19,8 +19,13 @@ sudo apt install -y ncbi-blast+
 sudo apt install -y p7zip-full
 sudo apt install -y zip unzip
 sudo apt install -y flake8
+sudo apt install -y golang-go
 # requires an updated sources.list
 sudo apt install -y libssl1.1
+
+# install cloudwatch cli: https://github.com/lucagrulla/cw
+go get github.com/lucagrulla/cw
+export PATH="$PATH:/home/$USER/go/bin"
 
 # install gimp
 sudo add-apt-repository ppa:otto-kesselgulasch/gimp
