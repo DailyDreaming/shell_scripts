@@ -108,7 +108,9 @@ git config --global credential.helper store
 gsettings set org.gnome.nautilus.preferences always-use-location-entry true
 
 # cinnamon desktop
-sudo add-apt-repository ppa:lestcape/cinnamon
+sudo add-apt-repository universe
+sudo apt install cinnamon-desktop-environment lightdm
+sudo dpkg-reconfigure lightdm
 
 # mod pip to allow installing without sudo
 sudo -H chmod 777 -R /home/{user}/.cache/pip
