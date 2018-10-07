@@ -71,6 +71,7 @@ sudo pip install -U jupyter jupyter_client ipython
 sudo pip install -U pandas 
 sudo pip install -U scipy 
 sudo pip install -U scikit-learn 
+sudo pip install -U boto
 sudo pip install -U khmer
 # project specific
 sudo pip install hca
