@@ -20,6 +20,8 @@ sudo apt install -y p7zip-full
 sudo apt install -y zip unzip
 sudo apt install -y flake8
 sudo apt install -y golang-go
+sudo apt install -y simplescreenrecorder
+sudo apt install -y nmap
 # requires an updated sources.list
 sudo apt install -y libssl1.1
 
