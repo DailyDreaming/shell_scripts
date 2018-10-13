@@ -135,6 +135,7 @@ alias mktoil='git clone https://github.com/DataBiosphere/toil.git && cd toil && 
 # https://wikileaks.org/ciav7p1/cms/page_1179773.html
 alias gitfix='git commit --amend -C HEAD'
 mktoilb() { git clone https://github.com/DataBiosphere/toil.git && cd toil && git checkout "$1" && virtualenv venv && . venv/bin/activate && make prepare && make develop extras=[all]; }
+testtoilb() { git clone https://github.com/DataBiosphere/toil.git && cd toil && git checkout "$1" && virtualenv venv && . venv/bin/activate && make prepare && make develop extras=[all] && make test; }
 gittoilb() { git clone https://github.com/DataBiosphere/toil.git && cd toil && git checkout "$1"; }
 ppjson() { cat "$1" | jq ''; }
 # https://github.com/DailyDreaming/fetch_gs_frm_json/blob/master/dl_gsfiles_frm_json.py
