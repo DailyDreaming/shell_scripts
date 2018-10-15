@@ -69,10 +69,11 @@ sudo pip install -U bs4
 sudo pip install -U virtualenv
 sudo pip install -U biopython
 sudo pip install -U flask
-sudo pip install -U jupyter jupyter_client ipython 
-sudo pip install -U pandas 
-sudo pip install -U scipy 
-sudo pip install -U scikit-learn 
+sudo pip install -U jupyter jupyter_client ipython
+sudo pip install -U pandas
+sudo pip install -U numpy
+sudo pip install -U scipy
+sudo pip install -U scikit-learn
 sudo pip install -U boto
 sudo pip install -U khmer
 # project specific
@@ -116,7 +117,7 @@ sudo apt install cinnamon-desktop-environment lightdm
 sudo dpkg-reconfigure lightdm
 
 # mod pip to allow installing without sudo
-sudo -H chmod 777 -R /home/{user}/.cache/pip
+sudo -H chmod 777 -R /home/$USER/.cache/pip
 
 # update kernel here: http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.16.2/
 
