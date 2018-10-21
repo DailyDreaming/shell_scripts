@@ -10,7 +10,9 @@
 ln -s /usr/include/locale.h /usr/include/xlocale.h
 
 sudo apt -y update
-sudo apt install -y tar wget git openjdk-8-jdk python-virtualenv libcurl4-nss-dev libsasl2-dev libsasl2-modules maven libapr1-dev libsvn-dev zlib1g-dev
+sudo apt install -y tar wget git openjdk-8-jdk build-essential 
+sudo apt install -y python-dev python-six python-virtualenv libcurl4-nss-dev libsasl2-dev 
+sudo apt install -y libsasl2-modules maven libapr1-dev libsvn-dev zlib1g-dev
 
 tar -zxf mesos-1.4.0.tar.gz
 cd mesos
