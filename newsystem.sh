@@ -86,8 +86,9 @@ sudo pip install wes-service
 mkdir ~/git
 # delete examples
 sudo rm -rf ~/examples.desktop
-# purge avahi deamon
-sudo apt-get purge avahi-daemon
+# purge useless programs
+sudo apt purge avahi-daemon
+sudo apt purge rhythmbox
 
 # install video player codecs
 sudo apt-get install ubuntu-restricted-extras
