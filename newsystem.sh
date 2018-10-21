@@ -24,6 +24,8 @@ sudo apt install -y simplescreenrecorder
 sudo apt install -y nmap
 # requires an updated sources.list
 sudo apt install -y libssl1.1
+# mesos reqs
+sudo apt-get -y install build-essential python-dev python-six python-virtualenv libcurl4-nss-dev libsasl2-dev libsasl2-modules maven libapr1-dev libsvn-dev zlib1g-dev
 
 # install cloudwatch cli: https://github.com/lucagrulla/cw
 go get github.com/lucagrulla/cw
