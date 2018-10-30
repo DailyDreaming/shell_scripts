@@ -5,8 +5,8 @@ sudo apt -y dist-upgrade
 sudo apt install -y curl
 sudo apt install -y libssl-dev libffi-dev
 sudo apt install -y jq
-sudo apt install -y python-pip
-sudo apt install -y python3-pip
+sudo apt install -y python3-pip python-pip
+sudo apt install -y python3-dev python-dev
 sudo apt install -y virtualenv
 # include bioconductor+
 sudo apt install -y r-base-core
