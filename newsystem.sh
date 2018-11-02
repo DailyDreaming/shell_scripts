@@ -133,7 +133,6 @@ ls /usr/share/applications/sublime-text.desktop # might be this instead on some 
 sudo nano /usr/share/applications/defaults.list # find/replace 'gedit' with 'sublime_text' or 'sublime-text'
 
 ## /etc/apt/sources.list
-deb http://security.ubuntu.com/ubuntu bionic-security main
 
 ## ~/.bashrc
 alias sudo='sudo '
