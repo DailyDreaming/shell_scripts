@@ -4,6 +4,7 @@ sudo apt -y upgrade
 sudo apt -y dist-upgrade
 sudo apt install -y curl
 sudo apt install -y libssl-dev libffi-dev
+# for pretty printing json
 sudo apt install -y jq
 sudo apt install -y python3-pip python-pip
 sudo apt install -y python3-dev python-dev
@@ -20,7 +21,11 @@ sudo apt install -y p7zip-full
 sudo apt install -y zip unzip
 sudo apt install -y flake8
 sudo apt install -y golang-go
+# record videos of your screen
 sudo apt install -y simplescreenrecorder
+# pipe any text to this for wicked colors
+sudo apt install -y lolcat
+# network/penetration tool
 sudo apt install -y nmap
 # requires an updated sources.list
 sudo apt install -y libssl1.1
