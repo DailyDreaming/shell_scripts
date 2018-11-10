@@ -125,6 +125,10 @@ sudo dpkg-reconfigure lightdm
 # mod pip to allow installing without sudo
 sudo -H chmod 777 -R /home/$USER/.cache/pip
 
+# insults when a password is incorrect
+sudo visudo
+# add "Defaults    insults"
+
 # update kernel here: http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.16.2/
 
 # set sublime text as the default editor
