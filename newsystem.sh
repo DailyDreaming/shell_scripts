@@ -21,6 +21,8 @@ sudo apt install -y p7zip-full
 sudo apt install -y zip unzip
 sudo apt install -y flake8
 sudo apt install -y golang-go
+# project gutenberg
+sudo apt install -y yaz
 # record videos of your screen
 sudo apt install -y simplescreenrecorder
 # pipe any text to this for wicked colors
@@ -38,6 +40,12 @@ sudo apt-get install build-essential autoconf libtool pkg-config python-opengl p
 # install cloudwatch cli: https://github.com/lucagrulla/cw
 go get github.com/lucagrulla/cw
 export PATH="$PATH:/home/$USER/go/bin"
+
+# project gutenberg API
+# https://github.com/internetarchive/openlibrary-client
+git clone https://github.com/internetarchive/openlibrary-client.git
+cd openlibrary-client
+pip install .
 
 # install gimp
 sudo add-apt-repository ppa:otto-kesselgulasch/gimp
