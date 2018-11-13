@@ -21,6 +21,7 @@ sudo apt install -y p7zip-full
 sudo apt install -y zip unzip
 sudo apt install -y flake8
 sudo apt install -y golang-go
+sudo apt install -y postgresql
 # project gutenberg
 sudo apt install -y yaz
 # record videos of your screen
