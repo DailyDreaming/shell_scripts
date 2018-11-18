@@ -25,6 +25,7 @@ sudo apt install -y postgresql
 # linear algebra libraries needed for opensim
 # https://simtk-confluence.stanford.edu/display/OpenSim/Linux+Support
 sudo apt install -y libblas-dev liblapack-dev
+sudo apt install -y mesa-common-dev
 # project gutenberg
 sudo apt install -y yaz
 # record videos of your screen
