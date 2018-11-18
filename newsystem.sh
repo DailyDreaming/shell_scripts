@@ -85,6 +85,7 @@ sh /opt/pycharm-2017.3.4/bin/pycharm.sh
 # install tensorflow
 # install cuda+
 # install keras
+# install mendeley: https://www.mendeley.com/download-desktop/
 
 # python
 sudo pip install -U matplotlib
