@@ -22,6 +22,9 @@ sudo apt install -y zip unzip
 sudo apt install -y flake8
 sudo apt install -y golang-go
 sudo apt install -y postgresql
+# linear algebra libraries needed for opensim
+# https://simtk-confluence.stanford.edu/display/OpenSim/Linux+Support
+sudo apt install -y libblas-dev liblapack-dev
 # project gutenberg
 sudo apt install -y yaz
 # record videos of your screen
