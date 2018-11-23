@@ -60,6 +60,12 @@ sudo apt install -y gimp
 # eog replacement
 sudo apt install -y viewnior
 
+# Reset default limiting thumbnails to 10Mb files + 64 pixels
+sudo apt install -y dconf-editor
+dconf-editor
+# org -> gnome -> nautilus -> preferences -> thumbnail-limit -> only files under (set a higher MB value and then try reloading)
+# org -> gnome -> nautilus -> icon-view -> reset thumbnail size
+
 # install docker
 # https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-16-04
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
