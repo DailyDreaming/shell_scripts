@@ -54,8 +54,11 @@ pip install .
 
 # install gimp
 sudo add-apt-repository ppa:otto-kesselgulasch/gimp
-sudo apt-get update
-sudo apt-get install gimp
+sudo apt update
+sudo apt install -y gimp
+
+# eog replacement
+sudo apt install -y viewnior
 
 # install docker
 # https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-16-04
