@@ -46,6 +46,9 @@ sudo apt-get install build-essential autoconf libtool pkg-config python-opengl p
 go get github.com/lucagrulla/cw
 export PATH="$PATH:/home/$USER/go/bin"
 
+# calibre
+sudo -v && wget -nv -O- https://download.calibre-ebook.com/linux-installer.sh | sudo sh /dev/stdin
+
 # project gutenberg API
 # https://github.com/internetarchive/openlibrary-client
 git clone https://github.com/internetarchive/openlibrary-client.git
