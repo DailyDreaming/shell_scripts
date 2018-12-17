@@ -36,6 +36,7 @@ sudo apt install -y libssl1.1
 # mesos reqs
 sudo apt-get -y install build-essential python-six python-virtualenv libcurl4-nss-dev libsasl2-dev libsasl2-modules maven libapr1-dev libsvn-dev zlib1g-dev
 # perl modules (JSON) >.<
+sudo apt install -y perl-docs
 sudo cpan JSON
 
 # https://stackoverflow.com/questions/22571848/debugging-the-error-gcc-error-x86-64-linux-gnu-gcc-no-such-file-or-directory
