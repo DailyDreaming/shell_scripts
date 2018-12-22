@@ -126,6 +126,9 @@ sudo rm -rf ~/examples.desktop
 # purge useless programs
 sudo apt purge avahi-daemon
 sudo apt purge rhythmbox
+# https://help.ubuntu.com/community/AptGet/Howto
+# remove all configuration data from every removed package
+dpkg -l | grep '^rc' | awk '{print $2}' | xargs dpkg --purge
 
 # install video player codecs
 sudo apt-get install ubuntu-restricted-extras
