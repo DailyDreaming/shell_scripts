@@ -6,6 +6,7 @@ sudo apt install -y libssl-dev libffi-dev
 sudo apt install -y jq
 sudo apt install -y python3-pip python-pip python3-dev python-dev
 sudo apt install -y virtualenv
+sudo apt install -y locate
 # include bioconductor+
 sudo apt install -y r-base-core
 sudo apt install -y cryptsetup
