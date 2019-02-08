@@ -119,6 +119,7 @@ sudo pip install -U khmer
 # project specific
 sudo pip install hca
 sudo pip install wes-service
+sudo pip install git+https://git-wip-us.apache.org/repos/asf/libcloud.git@trunk#egg=apache-libcloud
 
 # make dir for git
 mkdir ~/git
