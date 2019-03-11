@@ -189,3 +189,5 @@ gittoilb() { git clone https://github.com/DataBiosphere/toil.git && cd toil && g
 ppjson() { cat "$1" | jq ''; }
 # https://github.com/DailyDreaming/fetch_gs_frm_json/blob/master/dl_gsfiles_frm_json.py
 gs_json() { python /usr/local/bin/dl_gsfiles_frm_json.py "$1"; }
+
+gsettings set org.gnome.nautilus.icon-view default-zoom-level 'small'
