@@ -39,6 +39,8 @@ sudo apt-get -y install build-essential python-six python-virtualenv libcurl4-ns
 # perl modules (JSON) >.<
 sudo apt install -y perl-docs
 sudo cpan JSON
+# TODO group like packages
+sudo apt install -y jq zip unzip python3-pip python3-dev python-pip python-dev virtualenv locate flake8 build-essential software-properties-common libssl-dev libffi-dev
 
 # https://stackoverflow.com/questions/22571848/debugging-the-error-gcc-error-x86-64-linux-gnu-gcc-no-such-file-or-directory
 sudo apt-get install build-essential autoconf libtool pkg-config python-opengl python-pil python-pyrex python-pyside.qtopengl idle-python2.7 qt4-dev-tools qt4-designer libqtgui4 libqtcore4 libqt4-xml libqt4-test libqt4-script libqt4-network libqt4-dbus python-qt4 python-qt4-gl libgle3 python-dev
