@@ -1,46 +1,6 @@
 # update the system
 sudo apt update && sudo apt -y upgrade && sudo apt -y dist-upgrade
-sudo apt install -y curl
-sudo apt install -y libssl-dev libffi-dev
-# for pretty printing json
-sudo apt install -y jq
-sudo apt install -y python3-pip python-pip python3-dev python-dev
-sudo apt install -y virtualenv
-sudo apt install -y locate
-# include bioconductor+
-sudo apt install -y r-base-core
-sudo apt install -y cryptsetup
-sudo apt install -y compizconfig-settings-manager
-sudo apt install -y gconf-editor
-sudo apt install -y default-jdk
-sudo apt install -y mysql-server libmysqlclient-dev
-sudo apt install -y ncbi-blast+
-sudo apt install -y p7zip-full
-sudo apt install -y zip unzip
-sudo apt install -y flake8
-sudo apt install -y golang-go
-sudo apt install -y postgresql
-# linear algebra libraries needed for opensim
-# https://simtk-confluence.stanford.edu/display/OpenSim/Linux+Support
-sudo apt install -y libblas-dev liblapack-dev
-sudo apt install -y mesa-common-dev
-# project gutenberg
-sudo apt install -y yaz
-# record videos of your screen
-sudo apt install -y simplescreenrecorder
-# pipe any text to this for wicked colors
-sudo apt install -y lolcat
-# network/penetration tool
-sudo apt install -y nmap
-# requires an updated sources.list
-sudo apt install -y libssl1.1
-# mesos reqs
-sudo apt-get -y install build-essential python-six python-virtualenv libcurl4-nss-dev libsasl2-dev libsasl2-modules maven libapr1-dev libsvn-dev zlib1g-dev
-# perl modules (JSON) >.<
-sudo apt install -y perl-docs
-sudo cpan JSON
-# TODO group like packages
-sudo apt install -y jq zip unzip python3-pip python3-dev python-pip python-dev virtualenv locate flake8 build-essential software-properties-common libssl-dev libffi-dev
+sudo apt install -y build-essential compizconfig-settings-manager cryptsetup curl default-jdk flake8 gconf-editor golang-go jq libapr1-dev libcurl4-nss-dev libffi-dev libmysqlclient-dev libsasl2-dev libsasl2-modules libssl-dev libssl1.1 libsvn-dev locate lolcat maven mysql-server ncbi-blast+ nmap postgresql python-dev python-pip python-six python-virtualenv python3-dev python3-pip r-base-core simplescreenrecorder software-properties-common unzip virtualenv zip zlib1g-dev
 
 # https://stackoverflow.com/questions/22571848/debugging-the-error-gcc-error-x86-64-linux-gnu-gcc-no-such-file-or-directory
 sudo apt-get install build-essential autoconf libtool pkg-config python-opengl python-pil python-pyrex python-pyside.qtopengl idle-python2.7 qt4-dev-tools qt4-designer libqtgui4 libqtcore4 libqt4-xml libqt4-test libqt4-script libqt4-network libqt4-dbus python-qt4 python-qt4-gl libgle3 python-dev
