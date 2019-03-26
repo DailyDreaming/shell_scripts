@@ -1,6 +1,8 @@
 # update the system
 sudo apt update && sudo apt -y upgrade && sudo apt -y dist-upgrade
 sudo apt install -y build-essential compizconfig-settings-manager cryptsetup curl default-jdk flake8 gconf-editor golang-go jq libapr1-dev libcurl4-nss-dev libffi-dev libmysqlclient-dev libsasl2-dev libsasl2-modules libssl-dev libssl1.1 libsvn-dev locate lolcat maven mysql-server ncbi-blast+ nmap postgresql python-dev python-pip python-six python-virtualenv python3-dev python3-pip r-base-core simplescreenrecorder software-properties-common unzip virtualenv zip zlib1g-dev linux-tools-common linux-tools-generic
+# vg
+sudo apt-get install build-essential git cmake pkg-config libncurses-dev libbz2-dev protobuf-compiler libprotoc-dev libjansson-dev automake libtool jq bc rs curl unzip redland-utils librdf-dev bison flex gawk lzma-dev liblzma-dev liblz4-dev libffi-dev
 
 # https://stackoverflow.com/questions/22571848/debugging-the-error-gcc-error-x86-64-linux-gnu-gcc-no-such-file-or-directory
 sudo apt-get install build-essential autoconf libtool pkg-config python-opengl python-pil python-pyrex python-pyside.qtopengl idle-python2.7 qt4-dev-tools qt4-designer libqtgui4 libqtcore4 libqt4-xml libqt4-test libqt4-script libqt4-network libqt4-dbus python-qt4 python-qt4-gl libgle3 python-dev
