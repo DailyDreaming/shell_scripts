@@ -143,13 +143,25 @@ sudo nano /usr/share/applications/defaults.list # find/replace 'gedit' with 'sub
 
 ## ~/.bashrc
 alias sudo='sudo '
-alias gittoil='git clone https://github.com/DataBiosphere/toil.git'
-alias mktoil='git clone https://github.com/DataBiosphere/toil.git && cd toil && virtualenv venv && . venv/bin/activate && make prepare && make develop extras=[all]'
 # https://wikileaks.org/ciav7p1/cms/page_1179773.html
 alias gitfix='git commit --amend -C HEAD'
+
+# toil
+alias gittoil='git clone https://github.com/DataBiosphere/toil.git'
+alias mktoil='git clone https://github.com/DataBiosphere/toil.git && cd toil && virtualenv venv && . venv/bin/activate && make prepare && make develop extras=[all]'
 mktoilb() { git clone https://github.com/DataBiosphere/toil.git && cd toil && git checkout "$1" && virtualenv venv && . venv/bin/activate && make prepare && make develop extras=[all]; }
-testtoilb() { git clone https://github.com/DataBiosphere/toil.git && cd toil && git checkout "$1" && virtualenv venv && . venv/bin/activate && make prepare && make develop extras=[all] && make test; }
 gittoilb() { git clone https://github.com/DataBiosphere/toil.git && cd toil && git checkout "$1"; }
+# dss
+alias gitdss='git clone https://github.com/HumanCellAtlas/data-store.git'
+alias mkdss='git clone https://github.com/HumanCellAtlas/data-store.git && cd data-store && virtualenv -p python3.6 v3nv && . v3nv/bin/activate && pip install -r requirements-dev.txt && source environment'
+mkdssb() { git clone https://github.com/HumanCellAtlas/data-store.git && cd data-store && git checkout "$1" && virtualenv -p python3.6 v3nv && . v3nv/bin/activate && pip install -r requirements-dev.txt && source environment; }
+gitdssb() { git clone https://github.com/HumanCellAtlas/data-store.git && cd data-store && git checkout "$1"; }
+# dcp-cli
+alias gitcli='git clone https://github.com/HumanCellAtlas/dcp-cli.git'
+alias mkcli='git clone https://github.com/HumanCellAtlas/dcp-cli.git && cd dcp-cli && virtualenv -p python3.6 v3nv && . v3nv/bin/activate && pip install -r requirements-dev.txt && make install'
+mkclib() { git clone https://github.com/HumanCellAtlas/dcp-cli.git && cd dcp-cli && git checkout "$1" && virtualenv -p python3.6 v3nv && . v3nv/bin/activate && pip install -r requirements-dev.txt && make install; }
+gitclib() { git clone https://github.com/HumanCellAtlas/dcp-cli.git && cd dcp-cli && git checkout "$1"; }
+
 ppjson() { cat "$1" | jq ''; }
 # https://github.com/DailyDreaming/fetch_gs_frm_json/blob/master/dl_gsfiles_frm_json.py
 gs_json() { python /usr/local/bin/dl_gsfiles_frm_json.py "$1"; }
