@@ -1,6 +1,7 @@
 # update the system
 sudo apt update && sudo apt -y upgrade && sudo apt -y dist-upgrade
-sudo apt install -y build-essential compizconfig-settings-manager cryptsetup curl default-jdk flake8 gconf-editor golang-go jq libapr1-dev libcurl4-nss-dev libffi-dev libmysqlclient-dev libsasl2-dev libsasl2-modules libssl-dev libssl1.1 libsvn-dev locate lolcat maven mysql-server ncbi-blast+ nmap postgresql python-dev python-pip python-six python-virtualenv python3-dev python3-pip r-base-core simplescreenrecorder software-properties-common unzip virtualenv zip zlib1g-dev linux-tools-common linux-tools-generic
+sudo apt install -y python-dev python-pip python-six python-virtualenv python3-dev python3-pip python3.7-dev python3.7-pip python3.7 python3.6-dev python3.6-pip python3.6
+sudo apt install -y build-essential compizconfig-settings-manager cryptsetup curl default-jdk flake8 gconf-editor golang-go jq libapr1-dev libcurl4-nss-dev libffi-dev libmysqlclient-dev libsasl2-dev libsasl2-modules libssl-dev libssl1.1 libsvn-dev locate lolcat maven mysql-server ncbi-blast+ nmap postgresql r-base-core simplescreenrecorder software-properties-common unzip virtualenv zip zlib1g-dev linux-tools-common linux-tools-generic
 # vg
 sudo apt-get install build-essential git cmake pkg-config libncurses-dev libbz2-dev protobuf-compiler libprotoc-dev libjansson-dev automake libtool jq bc rs curl unzip redland-utils librdf-dev bison flex gawk lzma-dev liblzma-dev liblz4-dev libffi-dev
 
