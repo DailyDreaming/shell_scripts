@@ -117,6 +117,8 @@ git config --global user.email "you@example.com"
 git config --global user.name "Your Name"
 # https://git-scm.com/book/en/v2/Git-Tools-Credential-Storage#_credential_caching
 git config --global credential.helper store
+# git lg shortcut
+git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 
 # gnome settings (always show the path)
 gsettings set org.gnome.nautilus.preferences always-use-location-entry true
