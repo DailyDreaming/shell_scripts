@@ -24,20 +24,31 @@ diff_list = {'aws': [],
              'gcp': []}
 gcp_iter = get_all_gcp_keys(a_bucket.list_blobs())
 aws_iter = get_all_aws_keys(my_bucket.objects.all())
-gcp_key = next(gcp_iter, None)
-aws_key = next(aws_iter, None)
-while aws_key and gcp_key:
+gcp_key = next(gcp_iter, '')
+aws_key = next(aws_iter, '')
+while True:
     if gcp_key > aws_key:
         diff_list['aws'].append(aws_key)
-        print(f'AWS Diff: {aws_key}')
-        aws_key = next(aws_iter, None)
+        print(f'Extra in AWS: {aws_key}')
+        aws_key = next(aws_iter, '')
     elif gcp_key < aws_key:
         diff_list['gcp'].append(gcp_key)
-        print(f'GCP Diff: {gcp_key}')
-        gcp_key = next(gcp_iter, None)
+        print(f'Extra in GCP: {gcp_key}')
+        gcp_key = next(gcp_iter, '')
     elif gcp_key == aws_key:
-        aws_key = next(aws_iter, None)
-        gcp_key = next(gcp_iter, None)
+        aws_key = next(aws_iter, '')
+        gcp_key = next(gcp_iter, '')
+
+    if aws_key == '':
+        for g in gcp_iter:
+            diff_list['gcp'].append(gcp_key)
+            print(f'Extra in GCP: {g}')
+        break
+    elif gcp_key == '':
+        for a in aws_iter:
+            diff_list['aws'].append(aws_key)
+            print(f'Extra in AWS: {a}')
+        break
 
 with open('gcp.log', 'w') as f:
     for g in gcp_key:
